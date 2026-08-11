@@ -24,11 +24,11 @@ void display()
     //========================
     // LINE
     //========================
-//    glLineWidth(3);
+//    glLineWidth(30);
 //    glBegin(GL_LINES);
 //        glColor3f(0.0,1.0,0.0);
 //        glVertex2f(-0.8,0.5);
-//        glVertex2f(-0.2,0.5);
+//        glVertex2f(-0.10,0.5);
 //    glEnd();
 
     //========================
@@ -52,8 +52,11 @@ void display()
         glVertex2f(-0.6,0.2);
     glEnd();
 
+
+//    DOOR
+
         glBegin(GL_QUADS);
-        glColor3f(1.0,1.0,0.9);
+        glColor3f(0.55,0.27,0.07);
         glVertex2f(-0.2,-0.5);
         glVertex2f(0.2,-0.5);
         glVertex2f(0.2,0.0);
