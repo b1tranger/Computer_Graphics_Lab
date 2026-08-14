@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1786702676 source:c:\users\gsmur\documents\github\uits\computer_graphics_lab\assignment\1. draw a house\main.cpp
+1786704191 source:c:\users\gsmur\documents\github\uits\computer_graphics_lab\assignment\1. draw a house\main.cpp
 	<stdlib.h>
 	<cmath>
 	<GLUT/glut.h>
