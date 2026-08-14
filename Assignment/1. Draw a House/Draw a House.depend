@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1786702676 source:c:\users\gsmur\documents\github\uits\computer_graphics_lab\assignment\1. draw a house\main.cpp
+	<stdlib.h>
+	<cmath>
+	<GLUT/glut.h>
+	<GL/glut.h>
+
+1554063348 c:\program files\codeblocks\mingw\include\gl\glut.h
+	<windows.h>
+	<stdlib.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
