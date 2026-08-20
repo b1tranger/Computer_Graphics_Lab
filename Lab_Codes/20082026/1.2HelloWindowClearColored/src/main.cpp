@@ -53,7 +53,7 @@ int main()
 
         // render
         // ------
-        glClearColor(1.0f, 0.0f, 1.0f, 1.0f); //Sets the color that the window will be cleared to.red green blue alpha. Select the paint color
+        glClearColor(1.0f, 0.0f, 0.0f, 0.0f); //Sets the color that the window will be cleared to.red green blue alpha. Select the paint color
         glClear(GL_COLOR_BUFFER_BIT); //painting the entire window with that color.
 
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
