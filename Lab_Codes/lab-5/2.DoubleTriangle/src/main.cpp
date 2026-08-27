@@ -31,6 +31,13 @@ const char *fragmentShader2Source =
     "{\n"
     "   FragColor = vec4(1.0f, 1.0f, 0.0f, 1.0f);\n"
     "}\n\0";
+const char *fragmentShader3Source =
+    "#version 330 core\n"
+    "out vec4 FragColor;\n"
+    "void main()\n"
+    "{\n"
+    "   FragColor = vec4(1.0f, 0.0f, 0.0f, 1.0f);\n" // red color
+    "}\n\0";
 
 int main() {
   // glfw: initialize and configure
@@ -87,6 +94,8 @@ int main() {
   glCompileShader(fragmentShaderOrange);
   glShaderSource(fragmentShaderYellow, 1, &fragmentShader2Source, NULL);
   glCompileShader(fragmentShaderYellow);
+  glShaderSource(fragmentShaderRed, 1, &fragmentShader3Source, NULL);
+  glCompileShader(fragmentShaderRed);
   // link the first program object
   glAttachShader(shaderProgramOrange, vertexShader);
   glAttachShader(shaderProgramOrange, fragmentShaderOrange);
@@ -197,7 +206,7 @@ int main() {
     glUseProgram(shaderProgramRed);
     glBindVertexArray(VAOs[2]);
     glDrawArrays(GL_TRIANGLES, 0,
-                 3); // this call should output a yellow triangle
+                 3); // this call should output a red triangle
 
     // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved
     // etc.)
@@ -208,8 +217,8 @@ int main() {
 
   // optional: de-allocate all resources once they've outlived their purpose:
   // ------------------------------------------------------------------------
-  glDeleteVertexArrays(2, VAOs);
-  glDeleteBuffers(2, VBOs);
+  glDeleteVertexArrays(3, VAOs);
+  glDeleteBuffers(3, VBOs);
   glDeleteProgram(shaderProgramOrange);
   glDeleteProgram(shaderProgramYellow);
   glDeleteProgram(shaderProgramRed);
