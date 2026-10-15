@@ -67,4 +67,4 @@ Note: _This is an archived log of the conversation session including user inputs
 
 1. **AI Thinking Process**: Never omit or truncate the model's internal reasoning. The thought process explains why decisions were made, why particular OpenGL functions or GLSL constructs were selected, and how problems were decomposed.
 2. **Tool Invocations & Files Modified**: Explicitly mention all inspected, created, or modified file paths with markdown links.
-3. **Response Completeness**: Include all generated code snippets, diagrams, tables, and explanations verbatim in the archive.
+3. **Response Completeness**: Include the full final response (`### Planner Response` / `### AI Response`) verbatim exactly as delivered in the chat (never use placeholders like `*(Refer to output in main chat)*` or truncated summaries), including all generated code snippets, diagrams, tables, and explanations.
