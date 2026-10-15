@@ -491,7 +491,7 @@ int main()
                           8 * sizeof(float), (void*)(6 * sizeof(float)));
     glEnableVertexAttribArray(2);
 
-    if (!loadTexture("texture.jpg")) {
+    if (!loadTexture("shuba-duck-know-your-meme.gif")) {
         glDeleteBuffers(1, &EBO);
         glDeleteBuffers(1, &VBO);
         glDeleteVertexArrays(1, &VAO);
