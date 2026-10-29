@@ -1,6 +1,6 @@
 # Agent Guidelines & Workflow Rules
 
-These instructions define the mandatory operational protocols and archiving procedures for AI agents working in this repository.
+These instructions define the mandatory operational protocols, theory note generation, and archiving procedures for AI agents working in this repository.
 
 ---
 
@@ -8,7 +8,7 @@ These instructions define the mandatory operational protocols and archiving proc
 
 ### Target Archive Directory
 All conversation sessions, including prompts, AI thinking processes, actions taken, and final responses, must be saved and archived in:
-`c:\Users\gsmur\OneDrive\Documents\GitHub\Computer_Graphics_Lab\Prompts\`
+`Prompts/` (e.g. `d:\GitHub\UITS\Computer_Graphics_Lab\Prompts\`)
 
 ### Mandatory File Rules for `Prompts/`
 
@@ -27,7 +27,8 @@ All conversation sessions, including prompts, AI thinking processes, actions tak
   - `1. Creating Circular GLUT Graphics.md`
   - `2. Drawing Colored Borders and Practice Project.md`
   - `3. OpenGL Graphics Notes and Custom Agent Instructions.md`
-  - `4. <Next Chat Topic Title>.md`
+  - `4. Explanation of Apple Forward Compatibility Hint in GLFW.md`
+  - `5. <Next Chat Topic Title>.md`
 
 ### Frequency of Updates
 - **On Each Modification**: Whenever any code, note, configuration, or file is created or modified in response to a user request, the active conversation archive in `Prompts/` must be updated or created in the same turn.
@@ -35,7 +36,25 @@ All conversation sessions, including prompts, AI thinking processes, actions tak
 
 ---
 
-## 2. Archive File Structure & Format
+## 2. Theory Note Generation & Documentation (`Lab_Codes/Learning/`)
+
+### Target Directory & Naming
+* **Directory**: `Lab_Codes/Learning/`
+* **Naming Convention**: `<filename>-theory.md` (e.g. `3.RotateTriangle_mod-theory.md`).
+
+### Mandatory Standards
+1. **Clickable Table of Contents (TOC)**:
+   - Every theory file must begin with a clickable Markdown Table of Contents right after the introduction/header block.
+2. **GitHub Repository Link Prefix**:
+   - Source code links must use absolute GitHub repository URLs in the format:
+     `https://github.com/b1tranger/Computer_Graphics_Lab/blob/main/<path-from-repo-root>`
+3. **Structured Explanations**:
+   - Architectural and GPU pipeline concepts (VAO, VBO, Shaders, Uniforms).
+   - Comparison tables, code trace, and common pitfalls/traps.
+
+---
+
+## 3. Archive File Structure & Format
 
 Each archive file in `Prompts/` must adhere to the following Markdown format:
 
@@ -63,7 +82,7 @@ Note: _This is an archived log of the conversation session including user inputs
 
 ---
 
-## 3. Mandatory Inclusions
+## 4. Mandatory Inclusions
 
 1. **AI Thinking Process**: Never omit or truncate the model's internal reasoning. The thought process explains why decisions were made, why particular OpenGL functions or GLSL constructs were selected, and how problems were decomposed.
 2. **Tool Invocations & Files Modified**: Explicitly mention all inspected, created, or modified file paths with markdown links.
