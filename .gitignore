@@ -1,7 +1,46 @@
+# Compiled binaries & object files
 *.o
+*.obj
 *.exe
+*.out
+*.app
+**/build/main
 
-*.o
+# Debug and symbols
+*.pdb
+*.ilk
+
+# Code::Blocks project outputs & intermediate directories
 *.depend
 *.layout
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+*.cbTemp
+*.save
+
+# Archives & Temporary Packaging
 *.zip
+staging_*/
+staging_submission/
+
+# Backups & Editor Swap files
+*.bak
+*~
+*.swp
+*.tmp
+*.log
+
+# IDE & Editor metadata
+.vscode/
+.vs/
+.idea/
+cmake-build-*/
+
+# OS metadata
+.DS_Store
+._*
+Thumbs.db
+ehthumbs.db
+desktop.ini
