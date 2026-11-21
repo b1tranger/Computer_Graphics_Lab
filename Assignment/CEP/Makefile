@@ -8,20 +8,14 @@ SRCS = ./src/main.cpp \
        ./src/SceneRenderer.cpp \
        ./src/RayPicker.cpp
 
-# Windows target
+# Windows target: compile and run
 win:
 	$(CXX) $(CXXFLAGS) $(SRCS) -o ./build/main.exe -L./lib -lglfw3 -lopengl32 -lgdi32
-	@echo Build completed: ./build/main.exe
-
-run-win: win
 	./build/main.exe
 
-# Linux target
+# Linux target: compile and run
 linux:
 	$(CXX) $(CXXFLAGS) $(SRCS) -o ./build/main -L./lib -lglfw -lGL -lXrandr -lX11 -lrt -ldl
-	@echo Build completed: ./build/main
-
-run-linux: linux
 	./build/main
 
 clean:
